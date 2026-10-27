@@ -75,11 +75,6 @@ psql -d cereal_dwh -f sql/01_schema.sql
 psql -d cereal_dwh -f sql/03_load_postgres.sql
 ```
 
-**Regenerate the data** (change the seed, dates or brand parameters at the top of the script):
-```bash
-pip install duckdb pandas numpy
-python scripts/generate_data.py
-```
 
 ## Business questions answered (`02_analysis_queries.sql`)
 
@@ -90,10 +85,6 @@ python scripts/generate_data.py
 5. Best dayparts for kids brands
 6. Weekly TV pressure vs sales (dataset for charts or modelling)
 
-## Ideas to extend it
 
-- Build a Power BI / Tableau dashboard on top of the star schema
-- Fit a marketing mix model (adstock + saturation) in Python on the Q6 output
-- Add a competitor-pricing fact or a digital-analytics fact (site visits, searches)
 
 *All brands, manufacturers, retailers and figures are fictional.*
