@@ -1,6 +1,6 @@
 # Cereal Category Data Warehouse
 
-A star-schema data warehouse for the breakfast cereal category, with **dummy data** for 5 fictional brands covering 2024–2025:
+I built a data warehouse for a group of cereal brands that wanted to combine data from different sources into a single source of truth for sales, audiences and investment. Brand names and some of the data have been changed for privacy reasons.
 
 - **TV audiences** – every aired spot with channel, daypart, target, GRPs, impressions and cost
 - **Advertising investment** – weekly spend by brand, campaign and media type (TV, digital video, social, OOH, radio)
