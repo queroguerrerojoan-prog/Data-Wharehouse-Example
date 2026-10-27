@@ -31,16 +31,19 @@ The data is synthetic but internally consistent. TV investment equals the sum of
 `dim_brand` and `dim_date` are **conformed dimensions** shared by all three fact tables, which is what lets you compare audiences, investment and sales side by side. Daily TV data rolls up to the weekly grain through `dim_date.week_start`.
 
 ## Project structure
+
+```
 cereal_dwh/
 ├── sql/
-│ ├── 01_schema.sql # DDL (PostgreSQL & DuckDB compatible)
-│ ├── 02_analysis_queries.sql # 6 business questions answered in SQL
-│ └── 03_load_postgres.sql # \copy commands to load the CSVs
+│   ├── 01_schema.sql            # DDL (PostgreSQL & DuckDB compatible)
+│   ├── 02_analysis_queries.sql  # 6 business questions answered in SQL
+│   └── 03_load_postgres.sql     # \copy commands to load the CSVs
 ├── scripts/
-│ └── generate_data.py # Builds the synthetic data (seeded, reproducible)
+│   └── generate_data.py         # Builds the synthetic data (seeded, reproducible)
 └── data/
-├── *.csv # One file per table
-└── cereal_dwh.duckdb # Ready-to-query database
+    ├── *.csv                    # One file per table
+    └── cereal_dwh.duckdb        # Ready-to-query database
+```
 
 
 ## How to use it
