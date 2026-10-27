@@ -1,0 +1,6 @@
+daypart_id,daypart_name,start_hour,end_hour
+1,Morning,7,14
+2,Afternoon,14,17
+3,Early evening,17,20
+4,Prime time,20,24
+5,Late night,0,2

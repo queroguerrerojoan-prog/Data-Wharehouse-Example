@@ -1,0 +1,41 @@
+campaign_id,brand_id,campaign_name,objective,start_date,end_date,budget_eur
+1001,1,ChocoPlanet Awareness 2024-1,Awareness,2024-01-01,2024-02-11,956800.0
+1002,1,ChocoPlanet Promo 2024-2,Promo,2024-04-01,2024-04-28,774700.0
+1003,1,ChocoPlanet Awareness 2024-3,Awareness,2024-09-02,2024-10-13,1006400.0
+1004,1,ChocoPlanet Always-on 2024-4,Always-on,2024-11-04,2024-12-08,1615200.0
+1005,1,ChocoPlanet Awareness 2025-1,Awareness,2024-12-30,2025-01-19,510300.0
+1006,1,ChocoPlanet Promo 2025-2,Promo,2025-03-31,2025-05-11,1018500.0
+1007,1,ChocoPlanet Awareness 2025-3,Awareness,2025-09-08,2025-10-19,1129900.0
+1008,1,ChocoPlanet Always-on 2025-4,Always-on,2025-11-17,2025-12-28,910900.0
+1009,2,Crispy Valley Awareness 2024-1,Awareness,2024-01-29,2024-02-18,1131100.0
+1010,2,Crispy Valley Promo 2024-2,Promo,2024-05-06,2024-06-02,1209200.0
+1011,2,Crispy Valley Awareness 2024-3,Awareness,2024-09-09,2024-10-06,1035100.0
+1012,2,Crispy Valley Always-on 2024-4,Always-on,2024-10-21,2024-12-01,2874300.0
+1013,2,Crispy Valley Awareness 2025-1,Awareness,2025-02-03,2025-03-09,1557000.0
+1014,2,Crispy Valley Promo 2025-2,Promo,2025-04-28,2025-06-08,1664100.0
+1015,2,Crispy Valley Awareness 2025-3,Awareness,2025-09-08,2025-10-05,1096000.0
+1016,2,Crispy Valley Always-on 2025-4,Always-on,2025-10-27,2025-11-16,990900.0
+1017,3,FiberFit Awareness 2024-1,Awareness,2024-01-01,2024-02-04,1808400.0
+1018,3,FiberFit Promo 2024-2,Promo,2024-03-11,2024-03-31,1109200.0
+1019,3,FiberFit Awareness 2024-3,Awareness,2024-05-20,2024-06-30,2563700.0
+1020,3,FiberFit Always-on 2024-4,Always-on,2024-09-09,2024-10-13,2881200.0
+1021,3,FiberFit Awareness 2025-1,Awareness,2024-12-30,2025-02-09,1989400.0
+1022,3,FiberFit Promo 2025-2,Promo,2025-03-10,2025-04-06,1532300.0
+1023,3,FiberFit Launch 2025-3,Launch,2025-05-05,2025-06-15,2903800.0
+1024,3,FiberFit Always-on 2025-4,Always-on,2025-09-15,2025-10-26,2407400.0
+1025,4,Golden Honey Rings Awareness 2024-1,Awareness,2024-02-12,2024-03-24,1039400.0
+1026,4,Golden Honey Rings Promo 2024-2,Promo,2024-06-03,2024-06-23,412500.0
+1027,4,Golden Honey Rings Awareness 2024-3,Awareness,2024-09-02,2024-09-29,752600.0
+1028,4,Golden Honey Rings Always-on 2024-4,Always-on,2024-11-18,2024-12-08,1318200.0
+1029,4,Golden Honey Rings Awareness 2025-1,Awareness,2025-02-03,2025-02-23,524900.0
+1030,4,Golden Honey Rings Promo 2025-2,Promo,2025-06-02,2025-07-06,771600.0
+1031,4,Golden Honey Rings Awareness 2025-3,Awareness,2025-09-08,2025-10-12,864400.0
+1032,4,Golden Honey Rings Always-on 2025-4,Always-on,2025-11-17,2025-12-28,1100100.0
+1033,5,Muesli Alpino Awareness 2024-1,Awareness,2024-01-15,2024-02-11,1308700.0
+1034,5,Muesli Alpino Promo 2024-2,Promo,2024-04-15,2024-05-12,1563900.0
+1035,5,Muesli Alpino Awareness 2024-3,Awareness,2024-09-16,2024-10-13,1252000.0
+1036,5,Muesli Alpino Always-on 2024-4,Always-on,2024-11-11,2024-12-01,2201600.0
+1037,5,Muesli Alpino Awareness 2025-1,Awareness,2025-01-13,2025-02-02,1030900.0
+1038,5,Muesli Alpino Promo 2025-2,Promo,2025-04-14,2025-05-11,1220100.0
+1039,5,Muesli Alpino Awareness 2025-3,Awareness,2025-09-15,2025-10-05,946100.0
+1040,5,Muesli Alpino Always-on 2025-4,Always-on,2025-11-03,2025-12-07,1894200.0

@@ -1,0 +1,7 @@
+retailer_id,retailer_name,channel_type,coverage
+1,HiperMax,Hypermarket,National
+2,SuperCasa,Supermarket,National
+3,FreshMarket,Supermarket,Regional
+4,AhorroPlus,Discounter,National
+5,BioMercat,Supermarket,Regional
+6,ClickCompra,Online,National

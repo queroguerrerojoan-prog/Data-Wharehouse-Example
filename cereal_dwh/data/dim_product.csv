@@ -1,0 +1,16 @@
+product_id,brand_id,sku_code,product_name,pack_size_g,list_price_eur
+101,1,CHP-375,ChocoPlanet Original 375g,375,2.95
+102,1,CHP-750,ChocoPlanet Original 750g,750,4.99
+103,1,CHP-WHT,ChocoPlanet White Choco 375g,375,3.15
+201,2,CRV-500,Crispy Valley Corn Flakes 500g,500,2.49
+202,2,CRV-1KG,Crispy Valley Corn Flakes 1kg,1000,4.29
+203,2,CRV-HNY,Crispy Valley Honey Flakes 500g,500,2.79
+301,3,FBF-ORG,FiberFit Original 400g,400,3.89
+302,3,FBF-RED,FiberFit Red Berries 400g,400,4.19
+303,3,FBF-PRO,FiberFit Protein 350g,350,4.59
+401,4,GHR-375,Golden Honey Rings 375g,375,2.29
+402,4,GHR-700,Golden Honey Rings 700g,700,3.79
+403,4,GHR-CHO,Golden Honey Rings Choco 375g,375,2.45
+501,5,MSA-CLA,Muesli Alpino Classic 500g,500,4.49
+502,5,MSA-FRU,Muesli Alpino Fruits & Nuts 500g,500,4.99
+503,5,MSA-CRU,Muesli Alpino Crunchy 450g,450,4.79

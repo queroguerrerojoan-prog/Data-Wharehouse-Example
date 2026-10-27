@@ -1,0 +1,6 @@
+brand_id,brand_name,manufacturer_id,segment,price_tier,main_target_id,launch_year
+1,ChocoPlanet,1,Kids,Mainstream,3,2008
+2,Crispy Valley,2,Family,Mainstream,4,1996
+3,FiberFit,3,Health,Premium,2,2015
+4,Golden Honey Rings,1,Kids,Value,3,2001
+5,Muesli Alpino,2,Adult,Premium,5,2019

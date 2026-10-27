@@ -1,0 +1,10 @@
+channel_id,channel_name,channel_group,channel_type
+1,La 1,RTVE,Generalist
+2,Antena 3,Atresmedia,Generalist
+3,Telecinco,Mediaset España,Generalist
+4,Cuatro,Mediaset España,Generalist
+5,laSexta,Atresmedia,Generalist
+6,Clan,RTVE,Kids
+7,Boing,Mediaset España,Kids
+8,Neox,Atresmedia,Thematic
+9,FDF,Mediaset España,Thematic
