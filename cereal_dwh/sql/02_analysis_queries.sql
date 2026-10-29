@@ -16,6 +16,9 @@ JOIN dim_brand   b ON b.brand_id   = p.brand_id
 GROUP BY d.year, b.brand_name
 ORDER BY d.year, revenue_eur DESC;
 
+--- How much revenue each brand have made and what share of market represents
+
+
 
 -- Q2. Share of Voice (SOV) vs Share of Market (SOM) in 2025
 --     Brands with SOV > SOM are usually investing to grow.
@@ -43,6 +46,9 @@ FROM spend sp
 JOIN sales sa  USING (brand_id)
 JOIN dim_brand b USING (brand_id)
 ORDER BY excess_sov_pts DESC;
+
+--- First we create the brand investment and then the brand salesso we could compare both kpis
+
 
 
 -- Q3. Media mix: how each brand splits its budget across media
@@ -87,8 +93,7 @@ GROUP BY dp.daypart_name, dp.daypart_id
 ORDER BY dp.daypart_id;
 
 
--- Q6. Weekly TV pressure vs sales: one row per brand-week.
---     Export this to Python / Power BI to chart or model ad effects.
+-- Q6. Weekly TV pressure vs sales: one row per brand-week. Export it to PowerBI
 WITH tv AS (
     SELECT t.brand_id, d.week_start, SUM(t.grp) AS grps, SUM(t.spot_cost_eur) AS tv_spend
     FROM fact_tv_audience t
