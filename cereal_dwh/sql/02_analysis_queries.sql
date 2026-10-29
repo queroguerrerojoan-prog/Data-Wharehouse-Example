@@ -1,7 +1,4 @@
--- =====================================================================
--- EXAMPLE ANALYSIS QUERIES  (PostgreSQL / DuckDB)
--- Each one answers a business question a data analyst would get.
--- =====================================================================
+
 
 -- Q1. Market share by brand and year (value and volume)
 SELECT
