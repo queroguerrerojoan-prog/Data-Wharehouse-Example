@@ -45,18 +45,52 @@ cereal_dwh/
     └── cereal_dwh.duckdb        # Ready-to-query database
 ```
 
+## How the tables connect
 
-## How to use it
+The warehouse is a star schema: 3 fact tables hold the measures, and 11 dimension tables describe them. Data covers 1 Jan 2024 to 28 Dec 2025.
 
-**Option A – DuckDB (no setup):** open `data/cereal_dwh.duckdb` in DBeaver or the DuckDB CLI and run the queries in `sql/02_analysis_queries.sql`.
+### Join paths
 
-**Option B – PostgreSQL:**
-
-```bash
-createdb cereal_dwh
-psql -d cereal_dwh -f sql/01_schema.sql
-psql -d cereal_dwh -f sql/03_load_postgres.sql
+**`fact_sales`** (product × retailer × region × week)
 ```
+week_date_key → dim_date.date_key
+retailer_id   → dim_retailer.retailer_id
+region_id     → dim_region.region_id
+product_id    → dim_product.product_id → dim_brand.brand_id → dim_manufacturer.manufacturer_id
+```
+Sales has no `brand_id`: to analyse by brand, always join through `dim_product`.
+
+**`fact_ad_investment`** (brand × campaign × media type × week)
+```
+week_date_key → dim_date.date_key
+brand_id      → dim_brand.brand_id
+campaign_id   → dim_campaign.campaign_id
+media_type_id → dim_media_type.media_type_id
+```
+
+**`fact_tv_audience`** (one aired spot)
+```
+date_key    → dim_date.date_key   (daily)
+brand_id    → dim_brand.brand_id
+campaign_id → dim_campaign.campaign_id
+channel_id  → dim_tv_channel.channel_id
+daypart_id  → dim_daypart.daypart_id
+target_id   → dim_target.target_id
+```
+
+**Between dimensions**
+```
+dim_brand.manufacturer_id → dim_manufacturer.manufacturer_id
+dim_brand.main_target_id  → dim_target.target_id
+dim_product.brand_id      → dim_brand.brand_id
+dim_campaign.brand_id     → dim_brand.brand_id
+```
+
+### Combining sources
+
+`dim_brand` and `dim_date` are shared by all three fact tables. To compare sales, investment and TV, aggregate each fact table separately by brand and period (for example in CTEs), then join the results on `brand_id` and the period.
+
+Sales and investment are weekly: `week_date_key` is always the Monday of the week. TV is daily, so group it by `dim_date.week_start` to line it up with the weekly tables.
 
 ## Business questions answered
 
