@@ -1,6 +1,6 @@
 # Cereal Category Data Warehouse
 
-I built a data warehouse in **PostgreSQL** for a group of cereal brands. They wanted to combine data from different sources into a single source of truth for **sales, audiences and investment**. All brand names and figures are anonymized: the dataset is synthetic but reproduces realistic market behaviour.
+I built a data warehouse in **PostgreSQL** for a group of cereal brands. They wanted to combine data from different sources into a single source of truth for **sales, audiences and investment**. All brand names and figures are anonymized: the dataset is synthetic but reproduces realistic market behaviour. Worked with ProgresSQL (PgAdmin App).
 
 | Source | Content |
 |---|---|
@@ -71,34 +71,6 @@ cereal_dwh/
     └── *.csv                    # One file per table
 ```
 
-## How to use it
-
-### Option A: terminal (psql)
-
-Run these from the `cereal_dwh` folder, because the load script uses paths relative to it (`data/*.csv`):
-
-```bash
-createdb cereal_dwh
-psql -d cereal_dwh -f sql/01_schema.sql
-psql -d cereal_dwh -f sql/03_load_postgres.sql
-```
-
-### Option B: pgAdmin
-
-1. Create a database, then right-click it and choose **PSQL Tool**.
-2. Move to the project folder and run the scripts:
-   ```
-   \cd '/path/to/cereal_dwh'
-   \i sql/01_schema.sql
-   \i sql/03_load_postgres.sql
-   ```
-3. Check the load. This query should return **53,604**:
-   ```sql
-   SELECT COUNT(*) FROM fact_sales;
-   ```
-4. Open **Query Tool** and run `sql/02_analysis_queries.sql`.
-
-> `\copy` is a psql command, so it doesn't run in pgAdmin's Query Tool. Use the PSQL Tool for loading.
 
 ## Business questions answered
 
