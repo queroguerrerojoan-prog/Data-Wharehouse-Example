@@ -32,6 +32,21 @@ The warehouse is a **star schema**: 3 fact tables hold the measures and 11 dimen
 
 **Dimensions:** `dim_date`, `dim_brand`, `dim_manufacturer`, `dim_product`, `dim_retailer`, `dim_region`, `dim_campaign`, `dim_media_type`, `dim_tv_channel`, `dim_daypart`, `dim_target`.
 
+
+## How the tables connect
+
+The warehouse is a star schema: 3 fact tables hold the measures, and 11 dimension tables describe them.
+
+
+**Between dimensions**
+```
+dim_brand.manufacturer_id → dim_manufacturer.manufacturer_id
+dim_brand.main_target_id  → dim_target.target_id
+dim_product.brand_id      → dim_brand.brand_id
+dim_campaign.brand_id     → dim_brand.brand_id
+```
+
+
 ### Join paths
 
 ```
