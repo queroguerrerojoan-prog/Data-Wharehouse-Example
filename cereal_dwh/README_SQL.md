@@ -100,3 +100,26 @@ cereal_dwh/
 
 
 
+
+## Dashboard
+
+An interactive dashboard built on three of the analyses: **TV efficiency by channel**, **best dayparts for kids brands** and **weekly TV pressure vs sales**. It has year and brand filters and tooltips on every chart.
+
+**Live version:** https://queroguerrerojoan-prog.github.io/Data-Wharehouse-Example/ (the same file is in [`tv_dashboard.html`](tv_dashboard.html)).
+
+![Dashboard overview](../docs/images/dashboard_overview.png)
+
+### Weekly TV pressure vs sales
+Weekly revenue against the TV GRPs aired that week, and a scatter plot with the trend line and R².
+
+![Weekly TV pressure vs sales](../docs/images/weekly_tv_vs_sales.png)
+
+### TV efficiency by channel
+Spots, GRPs, spend, cost per GRP and CPM per channel, cheapest CPM first.
+
+![TV efficiency by channel](../docs/images/tv_efficiency_by_channel.png)
+
+### Best dayparts for kids brands
+Average GRPs per spot for kids brands compared with all brands, with cost per GRP by daypart.
+
+![Best dayparts for kids brands](../docs/images/kids_dayparts.png)
