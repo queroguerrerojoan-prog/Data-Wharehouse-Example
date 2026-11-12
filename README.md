@@ -75,7 +75,7 @@ fact_tv_audience    date_key      → dim_date (daily)
 ## Project structure
 
 ```
-cereal_dwh/
+Data-Wharehouse-Example/
 ├── sql/
 │   ├── 01_schema.sql            # DDL: creates the tables, keys and indexes
 │   ├── 02_analysis_queries.sql  # 6 business questions answered in SQL
